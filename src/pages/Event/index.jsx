@@ -1,11 +1,11 @@
 
 
-function Book(){
+function Event(){
     return(
         <div className="h-screen p-10">
-            Book
+            Event
         </div>
     )
 }
 
-export default Book;
+export default Event;
