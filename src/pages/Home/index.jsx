@@ -5,6 +5,7 @@ import cover2 from "../../assets/covers/2.jpeg";
 import home_img from "../../assets/home_img.jpeg";
 import like from "../../assets/like.svg";
 import order from "../../assets/order.svg";
+import Card from "./Card";
 
 function Home(){
     
@@ -30,45 +31,11 @@ function Home(){
                     <div className="w-full flex justify-center items-center">
 
                         <div className="flex gap-8 flex-wrap">
-                            <div className=" bg-gray-200 p-4 rounded-md flex flex-col gap-4">
-                                <img className="w-64 h-96" src={cover1} alt="cover" />
-                                <div className=" flex flex-col justify-center items-center">
-                                    <p className=" font-bold">The last four Things</p>
-                                    <p className=" -mt-1">by Paul HoffMan</p>
-                                </div>
-                                <div className="w-full flex justify-between">
-                                    <img className="w-8 h-8" src={like} alt="like" />
-                                    <NavLink to={""}>
-                                        <img className="w-8 h-8" src={order} alt="order" />
-                                    </NavLink>
-                                </div>
-                            </div>
-                            <div className=" bg-gray-200 p-4 rounded-md flex flex-col gap-4">
-                                <img className="w-64 h-96" src={cover1} alt="cover" />
-                                <div className=" flex flex-col justify-center items-center">
-                                    <p className=" font-bold">The last four Things</p>
-                                    <p className=" -mt-1">by Paul HoffMan</p>
-                                </div>
-                                <div className="w-full flex justify-between">
-                                    <img className="w-8 h-8" src={like} alt="like" />
-                                    <NavLink to={""}>
-                                        <img className="w-8 h-8" src={order} alt="order" />
-                                    </NavLink>
-                                </div>
-                            </div>
-                            <div className=" bg-gray-200 p-4 rounded-md flex flex-col gap-4">
-                                <img className="w-64 h-96" src={cover1} alt="cover" />
-                                <div className=" flex flex-col justify-center items-center">
-                                    <p className=" font-bold">The last four Things</p>
-                                    <p className=" -mt-1">by Paul HoffMan</p>
-                                </div>
-                                <div className="w-full flex justify-between">
-                                    <img className="w-8 h-8" src={like} alt="like" />
-                                    <NavLink to={""}>
-                                        <img className="w-8 h-8" src={order} alt="order" />
-                                    </NavLink>
-                                </div>
-                            </div>
+                            
+                            <Card cover={cover1} title={"The last four Things"} author={"by Paul HoffMan"} like={like} order={order} />
+                            <Card cover={cover2} title={"Daughter Of Man"} author={"Some author"} like={like} order={order} />
+                            <Card cover={cover1} title={"The last four Things"} author={"by Paul HoffMan"} like={like} order={order} />
+
                         </div>                        
 
                     </div>
