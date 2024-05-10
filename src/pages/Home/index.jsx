@@ -1,3 +1,4 @@
+
 import { NavLink } from "react-router-dom";
 import cover1 from "../../assets/covers/1.jpeg";
 import cover2 from "../../assets/covers/2.jpeg";
@@ -6,12 +7,13 @@ import like from "../../assets/like.svg";
 import order from "../../assets/order.svg";
 
 function Home(){
+    
     return(
         <div className="p-10">
             
-            <div className="relative w-full bg-gray-500 h-cover overflow-hidden">
+            <div className="relative w-full bg-gray-500 min-h-screen overflow-hidden">
                 <div className="absolute text-white z-20 bottom-32 left-64">
-                    <p className="text-5xl">
+                    <p className="text-5xl ml2">
                         ENTER IN THE WORD OF THE KNOWLEGE
                     </p>
                 </div>
@@ -73,6 +75,8 @@ function Home(){
                 </div>
 
             </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
         </div>
     )

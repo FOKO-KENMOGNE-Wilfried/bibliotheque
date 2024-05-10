@@ -1,11 +1,15 @@
-import './footer.css';
+import "./footer.css";
+import book from "../../assets/book.png";
 
 function Footer() {
   return (
     <div className="footer text-2xl">
       <div className="footer_top">
         <div className="footer_section footer_section1">
-          <h2>Biblio-Tech</h2>
+          <div className="flex items-center gap-4">
+            <img className="w-16 h-16" src={book} alt="logo" />
+            <h2>Biblio-Tech</h2>
+          </div>
           <p>Join us and discover our multitude of books</p>
         </div>
         <div className="footer_section footer_section2">
@@ -15,18 +19,24 @@ function Footer() {
         </div>
         <div className="footer_section footer_section3">
           <h2>Speed Links</h2>
-          <ul className=' flex flex-col gap-4'>
-            <li><a href="/">Home</a></li>
-            <li><a href="/book">Books</a></li>
-            <li><a href="/event">Events</a></li>
+          <ul className=" flex flex-col gap-4">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/book">Books</a>
+            </li>
+            <li>
+              <a href="/event">Events</a>
+            </li>
           </ul>
         </div>
       </div>
       <div className="footer_bottom">
-        copyright@2024 - Biblio-Tech | coded by <a href='/'>FTDcode</a>       
+        copyright@2024 - Biblio-Tech | coded by <a href="/">FTDcode</a>
       </div>
     </div>
-  )
+  );
 }
 
 export default Footer;

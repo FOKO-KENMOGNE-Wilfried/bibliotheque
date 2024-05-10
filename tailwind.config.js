@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       spacing: {
-        cover: "75vh"
+        cover: "80vh"
       },
     },
   },
