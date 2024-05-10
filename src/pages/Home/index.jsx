@@ -28,7 +28,9 @@ function Home(){
                     <p className=" text-gray-500 text-xl">The besst book for the last 02 week</p>
                 </div>
                 <div>
-                    <div className="w-full flex justify-center items-center">
+                    <div className="w-full flex flex-col gap-16 justify-center items-center">
+
+                        <NavLink to={"/book"} className="w-full flex justify-end pr-16 text-2xl font-bold hover:text-gray-500">See more</NavLink>
 
                         <div className="flex gap-8 flex-wrap">
                             

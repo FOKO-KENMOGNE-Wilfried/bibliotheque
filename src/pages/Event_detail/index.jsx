@@ -2,7 +2,7 @@
 
 function Event_detail(){
     return(
-        <div className="h-screen p-10">
+        <div className="min-h-screen p-10">
             Event_detail
         </div>
     )
